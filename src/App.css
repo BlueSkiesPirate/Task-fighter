@@ -1,0 +1,269 @@
+
+body{
+  background-color: #F9EBEB;
+}
+
+#top_nav{
+height:12.5vh;
+background-color: #F9EBEB;
+display: flex;
+}
+#greeting_conatiner {
+  width :50%;
+  height:100%;
+  font-size: 20px;
+  padding:5px;
+  padding-top:20px;
+}
+#user_container{
+  width:50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu{
+  width:3vh;
+  height: 3vh;
+}
+#user_img{
+  width:10vh;
+  height: 6vh;
+}
+
+/* MAIN DASHBOARD*/ 
+#main_dashboard{
+  height:25vh;
+  background-color: #F9EBEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  DAILY TASKS*/
+#daily_tasks{
+  height:20vh;
+  background-color: #F9EBEB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* OTHER WIDGETS  */
+#other_widgets{
+  height:17.5vh;
+  background-color: #F9EBEB;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* PROJECTS  */
+#projects_container{
+  height:25vh;
+  background-color: #F9EBEB;
+  display: flex;
+  justify-content: center;
+}
+
+#project_container{
+  height: 200px;
+  width:380px;
+  background-color:#FF7676;
+  border:#FF7676 solid 1px ;
+  border-radius: 20px;
+  padding:0px 10px;
+  padding-top: 10px;
+}
+
+#projects_heading{
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#project_title{
+  font-weight: bolder;
+}
+
+#view_projects{
+  width: 90px;
+  height:50px;
+  font-size: 20px;
+  font-weight: lighter;
+color: white;
+  background-color: #A35353;
+  border: white solid 1px;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dash{
+  height: 173px;
+  width:90%;
+  background-color: #2e1949;
+  border: 1px solid #2e1949;
+  border-radius: 10px;
+  display: flex;
+}
+
+
+#daily_tasks_container{
+  height: 94px;
+  width:90%;
+  background-color:white;
+  border: 1px solid black;
+  border-radius: 10px;
+  display:flex;
+
+
+}
+
+.other_widget{
+  height: 120px;
+  width:40%;
+
+}
+
+#side_quests{
+  border: 1px solid #FF9B05;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#battle{
+  background-color:#FFD600;
+  border: 2px solid #FFD600;
+  border-radius: 10px;
+}
+
+
+
+#dash_left{
+  width:40%;
+  height:100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+#xp_progress{
+  background-color:#00FFC2 ;
+  width: 80px;
+}
+#dash_middle{
+  width:20%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction:column;
+}
+
+.dash_middle_container{
+  height:40px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#dash_right{
+  width:30%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction:column;
+
+}
+.dash_right_container{
+height:40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+#health{
+  height:30px;
+  width: 120px;
+  background-color: red;
+  border:1px solid red;
+  border-radius: 10px;
+
+}
+
+#lvl_text{
+  color:#00FFC2;
+  font-size: 20px;
+  font-weight: bold;
+}
+#coin_number{
+  color:#FECB00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#daily_tasks_left{
+
+width: 40%;
+padding:10px;
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+#daily_tasks_middle{
+  background-color: red;
+  width: 20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#daily_tasks_right{
+  width: 40%;
+  display:flex;
+  justify-content: end;
+  align-items: center;
+
+}
+#add_tasks_btn{
+  width:30px;
+  height: 80%;
+  background-color: #14BD39 ;
+  border: 1px solid #14BD39;
+  border-radius: 10px 0px 0px 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-weight: bold;
+  font-size: 30px;
+}
+#view_tasks_btn{
+  width:100px;
+  height: 110%;
+  background-color: #00FF38 ;
+  border: 1px solid #00FF38;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#side_quests_title{
+margin-bottom: 10px;
+}
+
+#side_quests_available{
+  color:#FF9B05;
+  /* font-weight: bold; */
+  font-size: 30px;
+  margin-bottom: 10px;
+}
