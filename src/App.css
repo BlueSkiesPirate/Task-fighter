@@ -186,10 +186,10 @@ justify-content: center;
 
 }
 #health{
-  height:30px;
+  height:25px;
   width: 120px;
-  background-color: red;
-  border:1px solid red;
+  background-color: #F3414C;
+  border:1px solid #F3414C;
   border-radius: 10px;
 
 }
