@@ -1,0 +1,46 @@
+
+
+/* PROJECTS  */
+#projects_container{
+    height:25vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  #project_container{
+    height: 200px;
+    width:380px;
+    background-color:#FF7676;
+    border:#FF7676 solid 1px ;
+    border-radius: 20px;
+    padding:0px 10px;
+    padding-top: 10px;
+  }
+  
+#projects_heading{
+    height: 50px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #project_title{
+    font-weight: bolder;
+  }
+  
+  #view_projects{
+    width: 90px;
+    height:50px;
+    font-size: 20px;
+    font-weight: lighter;
+  color: white;
+    background-color: #A35353;
+    border: white solid 1px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  

@@ -1,0 +1,11 @@
+.other_widget{
+    height: 120px;
+    width:40%;
+  }
+  
+  #battle{
+    background-color:#FFD600;
+    border: 2px solid #FFD600;
+    border-radius: 10px;
+  }
+  

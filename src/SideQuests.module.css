@@ -1,0 +1,26 @@
+
+.other_widget{
+    height: 120px;
+    width:40%;
+  
+  }
+  
+  #side_quests{
+    border: 1px solid #FF9B05;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #side_quests_title{
+  margin-bottom: 10px;
+  }
+  
+  #side_quests_available{
+    color:#FF9B05;
+    /* font-weight: bold; */
+    font-size: 30px;
+    margin-bottom: 10px;
+  }

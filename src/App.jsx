@@ -4,6 +4,7 @@ import DailyTasks from "./DailyTasks";
 import SideQuests from "./SideQuests";
 import Battle from "./Battle";
 import Projects from "./Projects";
+import styles from "./App.module.css"
 
 
 function App() {
@@ -11,14 +12,17 @@ function App() {
 
   return (
     <>
-<TopNav/>
+    <body>
+    <TopNav/>
 <MainDashboard/>
 <DailyTasks/>
-<div id="other_widgets">
+<div id={styles.other_widgets}>
   <SideQuests/>
   <Battle/>
 </div>
 <Projects/>
+    </body>
+
   
   </>
   );

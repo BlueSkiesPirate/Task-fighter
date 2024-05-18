@@ -1,0 +1,72 @@
+
+#daily_tasks_container{
+    height: 94px;
+    width:90%;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:flex;
+  
+  
+  }
+  #daily_tasks{
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+  #daily_tasks_left{
+
+    width: 40%;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    }
+    
+    #daily_tasks_middle{
+      background-color: red;
+      width: 20%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #daily_tasks_right{
+      width: 40%;
+      display:flex;
+      justify-content: end;
+      align-items: center;
+    
+    }
+    #add_tasks_btn{
+      width:30px;
+      height: 80%;
+      background-color: #14BD39 ;
+      border: 1px solid #14BD39;
+      border-radius: 10px 0px 0px 10px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    #view_tasks_btn{
+      width:100px;
+      height: 110%;
+      background-color: #00FF38 ;
+      border: 1px solid #00FF38;
+      border-radius: 10px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-weight: bold;
+      font-size: 20px;
+    }  

@@ -1,3 +1,6 @@
+import styles from "./Battle.module.css"
+
+
 function Battle(){
     return(
 
@@ -5,7 +8,7 @@ function Battle(){
         <>
         
         
-<div className="other_widget" id="battle">
+<div className={styles.other_widget} id={styles.battle}>
 </div>    
     </>
     )

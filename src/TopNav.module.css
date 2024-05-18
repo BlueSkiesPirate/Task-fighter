@@ -1,0 +1,29 @@
+
+#top_nav{
+    height:12.5vh;
+    display: flex;
+    }
+    #greeting_conatiner {
+      width :50%;
+      height:100%;
+      font-size: 20px;
+      padding:5px;
+      padding-top:20px;
+    }
+    #user_container{
+      width:50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #menu{
+      width:3vh;
+      height: 3vh;
+    }
+    #user_img{
+      width:10vh;
+      height: 6vh;
+    }
+    

@@ -1,0 +1,9 @@
+body{
+    background-color: #F9EBEB;
+  }  
+
+#other_widgets{
+    height:17.5vh;
+    display: flex;
+    justify-content: space-around;
+  }
