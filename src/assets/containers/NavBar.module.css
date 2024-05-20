@@ -1,0 +1,22 @@
+.NavBar{
+    height:100vh;
+    width:40vw;
+    background-color: #D4C4DC;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.NavButton{
+    background-color: #6A46A4;
+    color:white;
+    border:none;
+    height:50px;
+    width:100%;
+}
+
+#user{
+    height:100px;
+    background-color: green;
+}

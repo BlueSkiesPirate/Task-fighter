@@ -4,7 +4,7 @@ import styles from "./TopNav.module.css"
 function TopNav(){
 
     const [time, setTime] = useState(new Date());
-    const [Year, setYear] = useState();
+
 
   function formatTime(){
     let day = time.getDay()
