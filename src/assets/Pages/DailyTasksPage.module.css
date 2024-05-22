@@ -1,0 +1,98 @@
+#TopBackground{
+    height:30vh;
+    width:100vw;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#BottomBackground{
+    height:70vh;
+    width:100vw;
+    background-color: rgb(56, 53, 53);
+
+}
+
+#TopContainer{
+    height:240px;
+    width: 380px;
+    border:1px solid;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+#TopNav{
+    height:30px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+#MainDash{
+    height:210px;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: green;
+    display:flex;
+}
+
+#DashLeft{
+    height:100%;
+    width: 35%;
+    /* background-color: green; */
+    border-radius: 0px 0px 0px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 2rem;
+
+}
+
+#DashRight{
+    height:100%;
+    width: 65%;
+    border-radius: 0px 0px 20px 0px;
+    /* background-color: green; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#DashDate{
+    height:50%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    border-radius: 0px 0px 0px 20px;
+    font-size: 2rem;
+    color: white;
+
+}
+
+#CreateContainer{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CreateButton{
+    width:80%;
+    height:60%;
+    background-color: darkcyan;
+    border-radius: 20px 0px 20px 0px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
