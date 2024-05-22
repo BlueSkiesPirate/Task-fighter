@@ -1,3 +1,4 @@
+
 #TopBackground{
     height:30vh;
     width:100vw;
@@ -5,14 +6,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-
-#BottomBackground{
-    height:70vh;
-    width:100vw;
-    background-color: rgb(56, 53, 53);
-
 }
 
 #TopContainer{
@@ -28,7 +21,41 @@
     height:30px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    background-color: #B3CDB9;
+    display:flex;
 }
+#NavLeft{
+    width:50%;
+    display:flex;
+    align-items: center;
+
+}
+
+#menu{
+    
+    width:3vh;
+    height: 3vh;
+    margin-left:20px
+}
+
+#NavRight{
+    width:50%;
+    display:flex;
+    justify-content: space-around;
+}
+#PreviousBtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+#NextBtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
 
 
 #MainDash{
@@ -95,4 +122,133 @@
     align-items: center;
     font-size: 2rem;
 
+}
+
+/* Bottom */
+
+#BottomBackground{
+    height:70vh;
+    width:100vw;
+    background-color: rgb(56, 53, 53);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#TaskContainer{
+    width: 90vw;
+    height: 15vh;
+    background-color: #4E6052;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 15px;
+
+
+
+}
+
+#TaskContainerLeft{
+    width:50%;
+    height:100%;
+
+}
+
+
+#TaskTitle{
+    height:50%;
+    width:100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF38;
+    border-radius: 15px 0px 20px 0px;
+    color:white;
+
+}
+
+#TaskRewards{
+    height:50%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#TaskContainerRight{
+    height:100%;
+    width:50%;
+}
+
+#TaskDetails{
+    height:50%;
+    width:100%;
+
+
+}
+
+#TaskActivate{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ActivateBtn{
+    height:40px;
+    width:160px;
+    border:none;
+    background-color: #BFA20B;
+    color:white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#MaxRewardTitle{
+    height:50%;
+    display: flex;
+    align-items: center;
+    color:white;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+#MaxReward{
+    background-color:#BFA20B;
+    height:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 10px 0px 15px;
+}
+
+
+.Reward{
+    font-size: 1rem;
+    color:white;
+}
+
+#Duration{
+    height:50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#Difficultycontainer{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1rem;
+    color:white;
+}
+.Difficulty{
+    height:20px;
+    width:20px;
+    background-color: green;
+}
+
+.TextFont{
+    font-family: monospace;
 }
