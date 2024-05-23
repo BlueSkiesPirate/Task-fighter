@@ -1,13 +1,13 @@
 import styles from "./CreateTask.module.css"
 
 
-export default function createtask(){
+export default function createtask({handleCreateTask}){
     return(
         <>
         
       <div id={styles.Container}>
         <div id={styles.TopContainer}>
-            <div id={styles.Create} className={`${styles.font}`}>
+            <div id={styles.Create} className={`${styles.font}`} onClick={() => handleCreateTask()}>
                Create
            
             </div>

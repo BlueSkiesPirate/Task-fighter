@@ -255,7 +255,13 @@
 
 
 .Display{
+    display: block;
+
+}
+
+.NoDisplay{
     display: none;
+
 }
 
 .CreateMenu{

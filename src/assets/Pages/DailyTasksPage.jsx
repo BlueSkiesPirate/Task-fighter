@@ -1,8 +1,25 @@
 import styles from "./DailyTasksPage.module.css"
 import CreateTask from "../containers/CreateTask"
+import React, {useState} from "react"
 
+
+
+
+
+    
 
 export default function DailyTasks(){
+
+const [BtnState, setBtnState] = useState(false)
+
+    function handleCreateTask(){
+        setBtnState(BtnState => !BtnState)
+        console.log(BtnState)
+    }
+    
+    let toggleClassCheck = BtnState ? styles.Display : styles.NoDisplay ;
+    
+    
     return(
         <>
         <div id={styles.positionAbsolute}>
@@ -31,7 +48,7 @@ export default function DailyTasks(){
                                 Mon 3/17/2024
                         </div>
                         <div id={styles.CreateContainer}>
-                            <div id={styles.CreateButton} className={styles.TextFont}>
+                            <div id={styles.CreateButton} className={styles.TextFont} onClick={handleCreateTask}>
                                 CREATE     +
                             </div>
                         </div>
@@ -62,6 +79,8 @@ export default function DailyTasks(){
 
                     </div>
                 </div>
+                {/*TASK*/}
+
                 <div id={styles.TaskContainerRight}>
                     <div id={styles.TaskDetails}>
                         <div id={styles.Duration}>
@@ -82,12 +101,13 @@ export default function DailyTasks(){
                         <button id={styles.ActivateBtn} className={` ${styles.TextFont}`}>Activate</button>
                     </div>
                 </div>
+                {/*TASK--------------------------------------------------*/}
             </div>
 
         </div>
         </div>
-        <div className={`${styles.Display} ${styles.CreateMenu}`}> {/*toggle the create button*/} 
-            <CreateTask />
+        <div id={styles.Menu} className={`${toggleClassCheck} ${styles.CreateMenu}`}> {/*toggle the create button*/} 
+            <CreateTask handleCreateTask={handleCreateTask}/>
         </div>
         </>
     )
