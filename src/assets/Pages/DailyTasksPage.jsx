@@ -1,9 +1,11 @@
 import styles from "./DailyTasksPage.module.css"
+import CreateTask from "../containers/CreateTask"
 
 
 export default function DailyTasks(){
     return(
         <>
+        <div id={styles.positionAbsolute}>
         <div id={styles.TopBackground}>
             <div id={styles.TopContainer}>
                 <div id={styles.TopNav}>
@@ -82,6 +84,10 @@ export default function DailyTasks(){
                 </div>
             </div>
 
+        </div>
+        </div>
+        <div className={`${styles.Display} ${styles.CreateMenu}`}> {/*toggle the create button*/} 
+            <CreateTask />
         </div>
         </>
     )

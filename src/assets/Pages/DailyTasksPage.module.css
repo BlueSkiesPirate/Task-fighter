@@ -252,3 +252,17 @@
 .TextFont{
     font-family: monospace;
 }
+
+
+.Display{
+    display: none;
+}
+
+.CreateMenu{
+    position:relative ;
+}
+
+#positionAbsolute{
+    position:absolute ;
+
+}

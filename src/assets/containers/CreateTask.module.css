@@ -1,9 +1,11 @@
 #Container{
     height:100vh;
-display:flex;
-flex-direction: column;
-justify-content: end;
-align-items: center;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: hsla(200, 20%, 20%, 0.9);
 
 
 }
