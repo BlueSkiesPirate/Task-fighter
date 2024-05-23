@@ -1,0 +1,102 @@
+
+#Background{
+    height:60vh;
+    width:100vw;
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+#NavBar{
+    width:90%;
+    height:40px;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+
+}
+
+#ToolsEquippedContainer{
+    width:80%;
+    height:60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ItContOut{
+    height:80px;
+    width:80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    
+}
+
+.ItContIn{
+    height:70px;
+    width:70px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+#BattleContainer{
+    height:40vh;
+    width:100vw;
+    background-color: grey;
+    display: flex;
+
+}
+
+#BattlesLeft{
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: yellow;
+}
+
+.UnlockedBattleBtn{
+    height: 170px;
+    width:170px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lockedBattleBtn{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BattlesRight{
+    height:100%;
+    width:50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#RigthFight{
+    height: 350px;
+    width:170px;
+
+}
