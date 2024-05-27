@@ -9,10 +9,8 @@ export default function DailyTasks(){
 
 const [BtnState, setBtnState] = useState(false)
 
-
     function handleCreateTask(){
         setBtnState(BtnState => !BtnState)
-        console.log(BtnState)
     }
     
     let toggleClassCheck = BtnState ? styles.Display : styles.NoDisplay ;
