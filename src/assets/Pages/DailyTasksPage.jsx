@@ -2,15 +2,13 @@ import styles from "./DailyTasksPage.module.css"
 import CreateTask from "../containers/CreateTask"
 import React, {useState} from "react"
 
-
-
-
-
     
 
 export default function DailyTasks(){
 
+
 const [BtnState, setBtnState] = useState(false)
+
 
     function handleCreateTask(){
         setBtnState(BtnState => !BtnState)
