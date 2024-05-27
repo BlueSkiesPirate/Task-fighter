@@ -1,13 +1,16 @@
 import styles from "./DailyTasksPage.module.css"
 import CreateTask from "../containers/CreateTask"
-import React, {useState} from "react"
-
+import React, {useState,useEffect} from "react"
+import {db} from '../firebase-config.js'
+import {collection, getDocs} from "@firebase/firestore"
     
 
 export default function DailyTasks(){
 
 
 const [BtnState, setBtnState] = useState(false)
+const [tasks, setTasks] = useState([])
+const tasksCollectionRef = collection(db, "tasks")
 
     function handleCreateTask(){
         setBtnState(BtnState => !BtnState)
@@ -16,6 +19,14 @@ const [BtnState, setBtnState] = useState(false)
     let toggleClassCheck = BtnState ? styles.Display : styles.NoDisplay ;
     
     
+    useEffect(() => {
+        const getTasks = async () =>{
+            const data = await getDocs(tasksCollectionRef)
+            setTasks(data.docs.map((doc) => ({...doc.data(), id: doc.id })))
+        }
+        getTasks()
+    },  [])
+
     return(
         <>
         <div id={styles.positionAbsolute}>
@@ -55,10 +66,15 @@ const [BtnState, setBtnState] = useState(false)
 
         </div>
         <div id={styles.BottomBackground}>
-            <div id={styles.TaskContainer}>
+{/*Tasks*/ }
+            {tasks.map((task) =>{
+           
+                return(
+                    <>
+                     <div id={styles.TaskContainer}>
                 <div id={styles.TaskContainerLeft}>
                     <div id={styles.TaskTitle} className={styles.TextFont}>
-                        Wash Dishes
+                        {task.title}
                     </div>
                     <div id={styles.TaskRewards}>
                         <div id={styles.MaxRewardTitle} className={styles.TextFont}>
@@ -75,7 +91,6 @@ const [BtnState, setBtnState] = useState(false)
 
                     </div>
                 </div>
-                {/*TASK*/}
 
                 <div id={styles.TaskContainerRight}>
                     <div id={styles.TaskDetails}>
@@ -88,7 +103,7 @@ const [BtnState, setBtnState] = useState(false)
                             </div>
                         </div>
                         <div id={styles.Difficultycontainer} className={` ${styles.TextFont}`}>
-                              <div className={`${styles.Difficulty}`}>
+                              <div className={styles.easy}>
                             </div> 
                              Difficulty
                         </div>
@@ -97,8 +112,13 @@ const [BtnState, setBtnState] = useState(false)
                         <button id={styles.ActivateBtn} className={` ${styles.TextFont}`}>Activate</button>
                     </div>
                 </div>
-                {/*TASK--------------------------------------------------*/}
+            
             </div>
+
+                    </>
+                ) 
+            })}
+            
 
         </div>
         </div>
