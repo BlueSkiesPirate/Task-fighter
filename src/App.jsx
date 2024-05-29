@@ -11,6 +11,7 @@ import Shop from "./assets/Pages/ShopPage"
 import SideQuests from "./assets/Pages/SideQuestsPage"
 import Tasks from "./assets/Pages/TasksPage"
 import User from "./assets/Pages/UserPage"
+import LogIn from "./assets/Pages/LogInPage"
 
 
 
@@ -22,6 +23,7 @@ function App() {
     <Router>
       <Routes>
 
+        <Route path="LogIn" element={<LogIn/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/Achievements" element={<Achievements/>}/>
         <Route path="/Armory" element={<Armory/>}/>
