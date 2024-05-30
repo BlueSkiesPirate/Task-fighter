@@ -1,3 +1,4 @@
+import styles from "./LogInPage.module.css"
 import { useState,useEffect } from "react"
 import {auth} from "../firebase-config"
 import {createUserWithEmailAndPassword,
@@ -53,19 +54,19 @@ export default function LogIn(){
     }
     return(
         <>
-            <div>
+            <div id={styles.container}>
                 <h3>Create user</h3>
                 <input placeholder="Email" onChange={(event) => {setRegisterEmail(event.target.value) }}/>
                 <input placeholder="Password" onChange={(event) => {setRegisterPass(event.target.value) }}/>
-                <button onClick={register}>Register</button>
+                <button className={styles.btn} onClick={register}>Register</button>
                 <h3>Log in</h3>
                 <input placeholder="Email"  onChange={(event) => {setLoginEmail(event.target.value) }}/>
                 <input placeholder="Password"  onChange={(event) => {setLoginPass(event.target.value) }}/>
-                <button onClick={login}>Log in</button>
+                <button className={styles.btn} onClick={login}>Log in</button>
 
-             <h1>user logged in</h1>
+             <h1>User logged in:</h1>
              {user?.email}
-             <button onClick={logOut}>Log Out</button>
+             <button className={styles.btn} onClick={logOut}>Log Out</button>
             </div>
 
         </>
