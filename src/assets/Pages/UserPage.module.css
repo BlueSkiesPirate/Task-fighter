@@ -1,0 +1,86 @@
+#topNav{
+    width:100vw;
+    height:5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+
+
+}
+
+#userContainer{
+    height:35vh;
+    width:100vw;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#UserImage{
+    height: 160px;
+    aspect-ratio: 1 / 1;
+    border: solid 3px greenyellow;
+    box-shadow: 0 0 0 6px green;
+    margin-bottom: 10px;
+}
+
+#aboutInfoContainer{
+    height:10vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#aboutInfo{
+    height:100%;
+    width:95%;
+    background-color: grey;
+    border-radius: 10px;
+ 
+}
+#statsContainer{
+
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#stats{
+    background-color: white;
+    width:95%;
+    height:100%
+
+}
+
+#btnContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+
+#AchievementsBtn{
+    background-color: grey;
+}
+
+#FeedbackBtn{
+    background-color: black;
+}
+
+.btn{
+    color:white;
+    border: none;
+    border-radius: 10px;
+    height:40px;
+    width:120px
+}
