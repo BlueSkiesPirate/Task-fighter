@@ -68,6 +68,11 @@ export default function LogIn(){
              {user?.email}
              <button className={styles.btn} onClick={logOut}>Log Out</button>
             </div>
+            <div>
+                <div id={styles.centered}>
+
+                </div>
+            </div>
 
         </>
     )
