@@ -17,9 +17,8 @@
     height:90vh;
     width:100vw;
     background-color: darkcyan;
-     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
     
 }
 
@@ -29,4 +28,6 @@
     background-color: bisque;
     border-radius: 50%;
     margin:10px
+
+    
 }
