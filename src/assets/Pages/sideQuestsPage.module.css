@@ -1,0 +1,27 @@
+#header{
+    width:100vw;
+    height:10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sideQuestContainer{
+ background-color: grey;
+ height:90vh;
+ width:100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+#sideQuest{
+    width:380px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin-top: 10px;
+}
